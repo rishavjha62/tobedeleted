@@ -1,0 +1,36 @@
+git config user.name   --> To check if user is added
+git config user.email --> To check if user's email is added
+git config --global user.name "<Enter name here"> --> To add user name
+git config --global user.email "<Enter email here"> --> To add user's email address
+
+git status --> to check the status and if .git file is present and if it is already a repository
+git init --> to create .git file which will create a new repository locally on your system
+
+git remote -v --> To check if remote branch is present
+git remote add origin "the remote branch address" -- to add the remote branch to which the files are to be pushed
+git remote remove origin --> to remove the remote branch
+git log --> to Check the all the commits made. It is history of the repo
+
+git add "file1" "file2" or . -->> To add multiple files with their name or . with all files that were changed or created
+git commit -m "your comment" --> To commit files and make them ready to be pushed on the remote branch
+git puch -u origin main/master "link to the remote branch. It will ask for credentials" --> To puch the changes to the remote branch
+
+git branch -M "newname" --> To rename the branch anything you want master/main.
+
+FETCH - It is used to download changes from Github remote repository, however you will not see the changes be part of files you have in the working directory.
+It allows to grab additional work done on the remote master/main branch, without needing to merge it in your working directory files.
+git fetch
+git fetch <remote>  <branch> --> 
+git fetch origin <branch>   --> from branch. To detach from the head.
+git switch to master/main --> To attach to the head again
+
+You will still not see the new file. Run this below command.
+git checkout origin/master or main --> to temporarily see stuff. 
+
+
+PULL - To pull directly from the remote branch and merge them into your working directory files.
+Not a best practice 
+git pull --> Will download new files from remote branch
+
+
+
